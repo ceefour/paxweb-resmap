@@ -13,3 +13,11 @@ h2. Building & Running
    to Karaf
 4. Test by visiting: http://localhost:8181/images/logo.jpg
    This will show Soluvas logo, as Bippo logo contained by second bundle is skipped.
+
+Then:
+
+5. Edit the @first.xml@ Blueprint to change the @alias@ to, say, @/images2@
+6. Redeploy the @com.hendyirawan.paxwebresmap.first@ bundle
+7. Notice that the Soluvas logo is accessible from http://localhost:8181/images2/logo.jpg .
+   However the Bippo logo is not accessible from http://localhost:8181/images/logo.jpg (404 Not Found).
+   In fact http://localhost:8181/images/ is not mapped at all.
