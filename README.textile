@@ -1,0 +1,15 @@
+h1. Pax Web Resource Mapping sample
+
+As a test case for issue http://team.ops4j.org/browse/PAXWEB-435
+
+h2. Building & Running
+
+1. Install Pax Web Whiteboard Extender in Karaf:
+
+   @features:install -v war@
+
+2. Build the project using @mvn install@ or by importing to Eclipse
+3. Deploy the bundles @com.hendyirawan.paxwebresmap.first@ and @com.hendyirawan.paxwebresmap.second@
+   to Karaf
+4. Test by visiting: http://localhost:8181/images/logo.jpg
+   This will show Soluvas logo, as Bippo logo contained by second bundle is skipped.
